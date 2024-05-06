@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main()
+{
+
+
+
+std::cout << "      A         B B B B\n";
+std::cout << "    A    A      B       B\n";
+std::cout << "   A      A     B       B\n";
+std::cout << "   A A A A A    B B B B\n";
+std::cout << "   A       A    B       B\n";
+std::cout << "   A       A    B       B\n";
+std::cout << "   A       A    B B B B\n";
+
+}
