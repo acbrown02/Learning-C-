@@ -1,0 +1,41 @@
+#include <iostream>
+#include <vector>
+#include <string>
+//translates phrases into "whale speak" with no consonants
+
+int main()
+{
+
+  std::string input = "Herp Derp Im a Whale";
+
+  std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u'};
+  std::vector<char> result;
+
+  for(int i = 0; i < input.size(); i++) 
+  {
+    // need a nested loop to check if a character is a vowel
+    for(int j = 0; j < vowels.size(); j++) 
+    {
+    //if statement needed to compare input[i] with vowels[j]
+    //if they are equal add the character to the result vecotr using .push_back()
+      if (input[i] == vowels[j]) 
+      {
+        result.push_back(input[i]);
+  //double the e's and u's 
+
+        if (input[i] == 'u' || input[i] == 'e') 
+         {
+            result.push_back(input[i]);
+         }
+       }
+     }
+  }
+
+  for(int k = 0; k < result.size(); k++)
+  {
+    std::cout << result[k];
+  }
+
+  std::cout << "\n";
+
+}
